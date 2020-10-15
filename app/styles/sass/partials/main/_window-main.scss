@@ -1,0 +1,51 @@
+@import "../../modules/debug-outline.scss";
+
+$windowColor: #333333;
+$borderColor: #68BD47;
+$glowColor: #11b20e;
+$borderRadius: 16px;
+
+$windowDefaultOpacity: 1;
+$windowHoverOpacity: 1;
+$windowHoverDuration: 0.2s;
+
+$displayGapSides: 4%;
+$displayGapTop: 2%;
+
+#clock-window-main {
+  display: flex;
+  width: 84%;
+  height: 110px;
+  margin: 0 auto 0 auto;
+  padding: 9px 10px 0px 10px;
+  border: 2.7px solid $borderColor;
+  border-radius: $borderRadius;
+  background-color: $windowColor;
+  box-shadow: 1px 1px 12px $glowColor;
+  -webkit-user-select: none; 
+  opacity: $windowDefaultOpacity;
+}
+
+#clock-window-main:hover{
+  color: #68BD47;
+  transition: $windowHoverDuration;
+}
+
+#display-container-outer {
+  display: flex;
+  width: 100%;
+  height: 82%;
+  border: 1.4px solid #1E1E1E;
+  border-radius: 13px 13px 8px 8px;
+  background-color: #2B292A; 
+}
+
+#display-container-inner {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  vertical-align: center;
+  flex-direction: row;
+  width: 100% - ($displayGapSides * 2);
+  padding: $displayGapTop $displayGapSides;
+}

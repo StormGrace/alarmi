@@ -1,0 +1,8 @@
+
+$isDebugOutlineOn: true;
+
+@mixin debug-outline(){
+	@if($isDebugOutlineOn){
+		border: 0.1px solid green;
+	}
+}

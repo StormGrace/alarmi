@@ -1,0 +1,78 @@
+@import "../../modules/debug-outline.scss";
+
+$displayGapSides: 4%;
+$displayGapTop: 2%;
+
+$tabContainerHeight: 20%;
+
+#options-container{
+	display:none;
+	width: 100% - ($displayGapSides * 2);
+  	margin: $displayGapTop $displayGapSides;
+	@include debug-outline;
+}
+
+#tab-container{
+	width: 100%;
+	height: $tabContainerHeight;
+	display:flex;
+	justify-content:center;
+	@include debug-outline;
+}
+
+.tab{
+	display:flex;
+	background-color: gray;
+	@include debug-outline;
+}
+
+.tab > h1{
+	display:flex;
+	align-self: center;
+	cursor: pointer;
+}
+
+#set-alarm{
+	margin-right: 2px;
+}
+
+#alarm-container{
+	width:100%;
+	height: 100%;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	@include debug-outline;
+}
+
+#alarms-container{
+	display:flex;
+	width:100%;
+	height:100% - $tabContainerHeight;
+	flex-wrap:wrap;
+	@include debug-outline;
+}
+
+#alarms-container-buttons{
+	display:flex;
+	width: 100%;
+	height: 20%;
+	@include debug-outline;
+}
+
+#add-alarm-button{
+	display: flex;
+	width: 18px;
+	height:100%;
+	fill:gray;
+	margin-left:auto;
+	margin-right: 4px;
+	@include debug-outline;
+}
+
+#alarm-container-ui{
+	display:flex;
+	width: 100%;
+	height:80%;
+	@include debug-outline;
+}

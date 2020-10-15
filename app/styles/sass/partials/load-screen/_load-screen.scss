@@ -1,0 +1,47 @@
+@import "../../modules/debug-outline.scss";
+
+$loadingBarColor: #333333;
+$progressBarColor: #68BD47;
+ 
+
+#loading-bar-container{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items:center;
+	width: 100%;
+	@include debug-outline;
+}
+
+#loading-bar-wrapper{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width: 80%;
+	height: 2%;
+	margin-top:auto;
+	background-color:$loadingBarColor;
+}   
+
+#loading-bar{
+	display:flex;
+	width: 1%;
+	height: 100%;
+	background-color:green;
+	box-shadow: 1px 1px 20px $progressBarColor;
+
+	border-left: 1px solid #627A14;
+	border-right: 1px solid #627A14;
+	border-bottom: 1px dotted #dbdbdb;
+	border-radius: 4px;
+}
+
+#loading-info{
+	display:flex;
+	align-self:center;
+	justify-content:center;
+	width: 90%;
+	color:#595959;
+	font-size: 0.7em;
+}
+ 

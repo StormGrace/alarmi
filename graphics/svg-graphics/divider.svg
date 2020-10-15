@@ -1,0 +1,16 @@
+<svg version="1.1" id="Divider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10 40" style="enable-background:new 0 0 10 10;" xml:space="preserve">
+<style type="text/css">
+	#divider_upper, #divider_lower
+	{
+		fill:#333031;
+		stroke: green;
+		stroke-width: 0.3;
+		stroke-linecap: round;
+		stroke-dasharray: 0.01;
+		transition:ease 0.65s;
+	}
+</style>
+<circle id = "divider_upper" class = "divider" cx="5" cy="5" r="4"/>
+<circle id = "divider_lower" class = "divider" cx="5" cy="35" r="4"/>
+</svg>

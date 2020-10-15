@@ -1,0 +1,36 @@
+@import "../../modules/debug-outline.scss";
+
+$defaultSegmentColor: #333031;
+$timerBackgroundColor: #2b2a2a;
+
+#clock-timer-container {
+  display: flex;
+  width: 75%;
+  height: 75%;
+  background-color: #timerBackgroundColor;
+  @include debug-outline; 
+}
+
+.timer-segment-container {
+  display: flex;
+  padding: 0 2%;
+  @include debug-outline; 
+}
+
+.t-segment {
+  width: 100%;
+  fill: $defaultSegmentColor; 
+}
+
+#segment-colon-container {
+ display: flex;
+ width: 5%; 
+ padding: 4px;
+ @include debug-outline; 
+}
+
+#segment-colon {
+ fill: $defaultSegmentColor; 
+}
+ 
+	 

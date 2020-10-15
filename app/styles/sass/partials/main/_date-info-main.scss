@@ -1,0 +1,20 @@
+@import "../../modules/debug-outline.scss";
+@import "../../modules/font-face.scss";
+
+$dateTextSize: 0.9em;
+$dateTextColor: #11b20e;
+
+#date-info-container-outer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  height: 25%;
+  @include debug-outline; 
+}
+#date-info-container-inner{
+  display:flex;
+  align-self:center;
+  font-size: 0.8em;
+  color: $dateTextColor;
+  @include debug-outline;
+ }

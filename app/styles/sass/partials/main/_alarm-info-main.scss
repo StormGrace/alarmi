@@ -1,0 +1,13 @@
+@import "../../modules/debug-outline.scss";
+@import "../../modules/font-face.scss";
+
+#alarm-info-container-outer {
+  display:flex;
+  width:12%;
+  height: 25%;
+  @include debug-outline; 
+}
+
+#alarm-info-container-inner {
+  @include debug-outline; 
+}

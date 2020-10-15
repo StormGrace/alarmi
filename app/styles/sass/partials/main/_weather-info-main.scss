@@ -1,0 +1,10 @@
+@import "../../modules/debug-outline.scss";
+@import "../../modules/font-face.scss";
+
+#weather-info-container {
+  display: flex;
+  flex: 1;
+  min-width: 5%;
+  height: 75%;
+  @include debug-outline;
+ }

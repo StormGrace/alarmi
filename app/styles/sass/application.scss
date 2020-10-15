@@ -1,0 +1,13 @@
+@import "plugins/normalizer";
+
+@import "partials/load-screen/load-screen";
+
+@import "partials/main/window-main";
+@import "partials/main/timer-segments";
+@import "partials/main/buttons-main";
+@import "partials/main/date-info-main";
+@import "partials/main/alarm-info-main";
+@import "partials/main/weather-info-main";
+
+@import "partials/alarm/alarm";
+@import "partials/settings/settings";
